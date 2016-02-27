@@ -16,6 +16,8 @@ angular.element(document).ready(function() {
     'ripplecharts.value',
     'ripplecharts.history',
     'ripplecharts.metrics',
+      'ledgerd.deposit',
+      'ledgerd.withdraw',
     'ui.state',
     'ui.route',
     'snap',
@@ -73,8 +75,8 @@ angular.element(document).ready(function() {
       if (ga) ga('send', 'pageview', toState.name);
 
       if ( angular.isDefined( toState.data.pageTitle ) )
-           $scope.pageTitle = toState.data.pageTitle + ' | 瑞波币钱包|XRP行情|Ripple网关|CNY网关 - Cinapay' ;
-      else $scope.pageTitle = "瑞波币钱包|XRP行情|Ripple网关|CNY网关 - Cinapay"
+           $scope.pageTitle = toState.data.pageTitle + ' | 分布式交易结算系统 - Ledgerd' ;
+      else $scope.pageTitle = "分布式交易结算系统 - Ledgerd"
 
     });
 

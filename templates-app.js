@@ -1,4 +1,4 @@
-angular.module('templates-app', ['accounts/accounts.tpl.html', 'active/active.tpl.html', 'graph/graph.tpl.html', 'history/history.tpl.html', 'landing/landing.tpl.html', 'manage-currencies/manage-currencies.tpl.html', 'manage-gateways/manage-gateways.tpl.html', 'markets/markets.tpl.html', 'metrics/metrics.tpl.html', 'multimarkets/multimarkets.tpl.html', 'trade-volume/trade-volume.tpl.html', 'transactions/transactions.tpl.html', 'value/value.tpl.html']);
+angular.module('templates-app', ['accounts/accounts.tpl.html', 'active/active.tpl.html', 'deposit/deposit.tpl.html', 'graph/graph.tpl.html', 'history/history.tpl.html', 'landing/landing.tpl.html', 'manage-currencies/manage-currencies.tpl.html', 'manage-gateways/manage-gateways.tpl.html', 'markets/markets.tpl.html', 'metrics/metrics.tpl.html', 'multimarkets/multimarkets.tpl.html', 'trade-volume/trade-volume.tpl.html', 'transactions/transactions.tpl.html', 'value/value.tpl.html', 'withdraw/withdraw.tpl.html']);
 
 angular.module("accounts/accounts.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("accounts/accounts.tpl.html",
@@ -59,6 +59,13 @@ angular.module("active/active.tpl.html", []).run(["$templateCache", function($te
     "\n" +
     "\n" +
     "");
+}]);
+
+angular.module("deposit/deposit.tpl.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("deposit/deposit.tpl.html",
+    "<div class=\"container\">\n" +
+    "    <h1>目前仅支持线下充值，充值方式联系<a href=\"mailto:deposit@ledgerd.com\">deposit@ledgerd.com</a></h1>\n" +
+    "</div>");
 }]);
 
 angular.module("graph/graph.tpl.html", []).run(["$templateCache", function($templateCache) {
@@ -777,4 +784,11 @@ angular.module("value/value.tpl.html", []).run(["$templateCache", function($temp
     "  </div>\n" +
     "</div>\n" +
     "<div id=\"valueChart\" data-snap-ignore=\"true\"></div>");
+}]);
+
+angular.module("withdraw/withdraw.tpl.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("withdraw/withdraw.tpl.html",
+    "<div class=\"container\">\n" +
+    "    <h1>目前仅支持线下提现，充值方式联系<a href=\"mailto:withdraw@ledgerd.com\">withdraw@ledgerd.com</a></h1>\n" +
+    "</div>");
 }]);
