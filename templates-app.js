@@ -64,7 +64,7 @@ angular.module("active/active.tpl.html", []).run(["$templateCache", function($te
 angular.module("deposit/deposit.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("deposit/deposit.tpl.html",
     "<div class=\"container\">\n" +
-    "    <h1>目前仅支持线下充值，充值方式联系<a href=\"mailto:deposit@ledgerd.com\">deposit@ledgerd.com</a></h1>\n" +
+    "    <h1>目前仅支持线下充值，充值联系<a href=\"mailto:deposit@ledgerd.com\">deposit@ledgerd.com</a></h1>\n" +
     "</div>");
 }]);
 
@@ -789,6 +789,6 @@ angular.module("value/value.tpl.html", []).run(["$templateCache", function($temp
 angular.module("withdraw/withdraw.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("withdraw/withdraw.tpl.html",
     "<div class=\"container\">\n" +
-    "    <h1>目前仅支持线下提现，充值方式联系<a href=\"mailto:withdraw@ledgerd.com\">withdraw@ledgerd.com</a></h1>\n" +
+    "    <h1>目前仅支持线下提现，提现联系<a href=\"mailto:withdraw@ledgerd.com\">withdraw@ledgerd.com</a></h1>\n" +
     "</div>");
 }]);

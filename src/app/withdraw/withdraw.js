@@ -12,7 +12,7 @@ angular.module( 'ledgerd.withdraw', [
                     templateUrl: 'withdraw/withdraw.tpl.html'
                 }
             },
-            data:{ pageTitle: '充值' }
+            data:{ pageTitle: '提现' }
         });
     }])
 
